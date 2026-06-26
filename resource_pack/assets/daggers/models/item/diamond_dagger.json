@@ -1,0 +1,7 @@
+{
+  "parent": "daggers:item/dagger",
+  
+  "textures": {
+    "layer0": "daggers:item/diamond_dagger"
+  }
+}

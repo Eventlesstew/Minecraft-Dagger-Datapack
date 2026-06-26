@@ -1,0 +1,48 @@
+{
+    "type":"smithing_transform",
+    "template":"netherite_upgrade_smithing_template",
+    "addition": "#netherite_tool_materials",
+    "base": "minecraft:music_disc_creator_music_box",
+    "result": {
+        "count": 1,
+        "id": "music_disc_creator",
+        "components": {
+            "!jukebox_playable": {},
+            "rarity":"common",
+            "damage_resistant":{"types": "#is_fire"},
+            "damage_type":"daggers:player_dagger",
+            "item_name":{"translate":"item.minecraft.netherite_dagger"},
+            "minecraft:item_model":"daggers:netherite_dagger",
+            "weapon":{},
+            "max_damage":2031,
+            "swing_animation":{"type":"stab","duration":20},
+            "max_stack_size":1,
+            "damage":0,
+            "minecraft:attribute_modifiers":[
+                {
+                    "slot":"mainhand",
+                    "amount":4,
+                    "type":"minecraft:attack_damage",
+                    "operation":"add_value",
+                    "id":"minecraft:daggers"
+                },
+                {
+                    "slot":"mainhand",
+                    "amount":-1,
+                    "type":"entity_interaction_range",
+                    "operation":"add_value",
+                    "id":"minecraft:daggers"
+                }
+            ],
+            "tool":{
+                "rules":[
+                    {
+                        "blocks":"cobweb",
+                        "correct_for_drops":true,
+                        "speed":64.0
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "type":"crafting_shaped",
+    "category":"equipment",
+    "key": {
+        "A":"#wooden_tool_materials",
+        "B":"stick"
+    },
+    "pattern": [
+        "A",
+        "B"
+    ],
+    "result": {
+        "count": 1,
+        "id": "music_disc_creator",
+        "components": {
+            "!jukebox_playable": {},
+            "rarity":"common",
+            "damage_type":"daggers:player_dagger",
+            "item_name":{"translate":"item.minecraft.wooden_dagger"},
+            "minecraft:item_model":"daggers:wooden_dagger",
+            "weapon":{},
+            "max_damage":59,
+            "swing_animation":{"type":"stab","duration":20},
+            "max_stack_size":1,
+            "damage":0,
+            "minecraft:attribute_modifiers":[
+                {
+                    "slot":"mainhand",
+                    "amount":0,
+                    "type":"minecraft:attack_damage",
+                    "operation":"add_value",
+                    "id":"minecraft:daggers"
+                },
+                {
+                    "slot":"mainhand",
+                    "amount":-1,
+                    "type":"entity_interaction_range",
+                    "operation":"add_value",
+                    "id":"minecraft:daggers"
+                }
+            ],
+            "tool":{
+                "rules":[
+                    {
+                        "blocks":"cobweb",
+                        "correct_for_drops":true,
+                        "speed":64.0
+                    }
+                ]
+            }
+        }
+    }
+}
